@@ -1,0 +1,398 @@
+1c
+// Napisz program, który wypisuje kolejne potęgi
+// liczby 2 nie przekraczające 2010.
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  int power = 0;
+  int number = 2;
+  int result;
+  printf("Program wypisuje kolejne potęgi liczby 2, nie przekraczając liczby 2010 \n");
+  while (result < 2010)
+  {
+    result = pow(number, power);
+    if (result > 2010)
+      break;
+    printf("2^%d = %d \n", power, result);
+    power++;
+  }
+}
+
+
+
+
+
+
+
+
+2c
+// Napisz program wyświetlający poniższą szachownicę:
+
+// * * * * * * * *
+//  * * * * * * * *
+// * * * * * * * *
+//  * * * * * * * *
+// * * * * * * * *
+//  * * * * * * * *
+// * * * * * * * *
+//  * * * * * * * *
+#include <stdio.h>
+
+int main()
+{
+  int col = 8;
+  int row = 8;
+  for (int i = 0; i < col; i++)
+  {
+    printf("\n");
+    if (i % 2 == 1)
+      printf(" ");
+    for (int i = 0; i < row; i++)
+    {
+      printf("*");
+      printf(" ");
+    }
+  }
+  printf("\n");
+}
+
+
+
+
+
+
+
+
+3c
+// Napisz program, który wczyta dwie liczby całkowite
+// a i b (a<b) a następnie wypisze wszystkie liczby
+// całkowite pomiędzy a i b.
+
+#include <stdio.h>
+
+void numberInput(int *a, int *b);
+void numberOutput(int a, int b);
+
+int main()
+{
+  int a, b;
+  printf("Program wczytuje 2 liczby całkowite a oraz b (a<b),\na następnie wypisuje wszystkie liczby całkowite pomiędzy nimi\n");
+  printf("Podaj dwie liczby rzeczywiste oddzielone spacją:\n");
+  numberInput(&a, &b);
+  numberOutput(a, b);
+}
+
+void numberInput(int *a, int *b)
+{
+  scanf("%d %d", a, b);
+}
+
+void numberOutput(int a, int b)
+{
+  printf("Liczby pomiędzy %d oraz %d to: ", a, b);
+  for (int i = a + 1; i < b; i++)
+  {
+    printf("%d ", i);
+  }
+  printf("\n");
+}
+
+
+
+
+
+
+
+4c
+// Napisz program, który wyliczy sumę liczb naturalnych
+// od 1 do liczby n podanej przez użytkownika.
+// Kiedy użytkownik poda liczbę mniejszą niż 1, to program
+// powinien wypisać stosowny komunikat o błędzie.
+
+#include <stdio.h>
+
+void numberInput(int *number);
+void numberSum(int number);
+
+int main()
+{
+  int number;
+  printf("Program wylicza sumę liczb naturalnych od 1\ndo podanej przez uzytkownika liczby..\n");
+  printf("Wprowadz liczbę na ktorej sumowanie ma się zakonczyc:\n");
+  numberInput(&number);
+  numberSum(number);
+}
+
+void numberInput(int *number)
+{
+  scanf("%d", number);
+}
+
+void numberSum(int number)
+{
+  if (number < 1)
+    printf("Proszę podać liczbę naturalną większą od 1 aby sumowanie przebiegło prawidłowo\n");
+  else
+  {
+    int a = 1;
+    int result = 0;
+    while (a <= number)
+    {
+      result += a;
+      a++;
+    }
+    printf("Suma liczb od 1 do %d wynosi: %d\n", number, result);
+  }
+}
+
+
+
+
+
+
+5c
+// Napisz program, który wczyta ze stdin 6
+// liczb całkowitych do tablicy, a następnie
+// wypisze zawartość tej tablicy od początku i od końca.
+
+#include <stdio.h>
+
+int main()
+{
+  int numbers[6];
+  printf("Program wczytuje 6 liczb całkowitych z konsoli do tablicy i wypisuje ich wartość\n");
+  printf("Wprowadz 6 liczb całkowitych oddzielonych spacją,\nlub zatwierdzając każdą z nich enterem\n");
+  for (int i = 0; i < 6; i++)
+  {
+    scanf("%d", &numbers[i]);
+  }
+  printf("Wpisane liczby to: ");
+  for (int i = 0; i < 6; i++)
+  {
+    printf("%d ", numbers[i]);
+  }
+  printf("\n");
+}
+
+
+
+
+
+
+
+
+6c
+// Napisz program, który wczyta ze stdin 6 liczb
+// rzeczywistych do tablicy, a następnie wyszuka
+// i wypisze największą i najmniejszą liczbę umieszczoną
+// w tej tablicy.
+
+#include <stdio.h>
+
+int main()
+{
+  double numbers[6];
+  double max;
+  double min;
+  printf("Program wczytuje 6 liczb z konsoli do tablicy i wypisuje najmniejszą i największą wartość\n");
+  printf("Wprowadz 6 liczb oddzielonych spacją,\nlub zatwierdzając każdą z nich enterem\n");
+  for (int i = 0; i < 6; i++)
+  {
+    scanf("%lf", &numbers[i]);
+  }
+  for (int i = 0; i < 6; i++)
+  {
+    if (i == 0)
+    {
+      min = max = numbers[i];
+    }
+    else if (max < numbers[i])
+      max = numbers[i];
+    else if (min > numbers[i])
+      min = numbers[i];
+  }
+  printf("Najmniejszą liczbą wpisaną do tablicy jest: %.2lf\n", min);
+  printf("Najwiekszą liczbą wpisaną do tablicy jest: %.2lf\n", max);
+}
+
+
+
+
+
+
+
+7c
+// Napisz program, który ze stdin wczyta
+// 6 liczb rzeczywistych do tablicy, a
+// następnie wypisze liczbę liczb dodatnich
+// w niej zawartych.
+
+#include <stdio.h>
+
+int main()
+{
+  double numbers[6];
+  int count = 0;
+  printf("Program wczytuje 6 liczb z konsoli do tablicy i wypisuje ilość liczb dodatnich\n");
+  printf("Wprowadz 6 liczb oddzielonych spacją,\nlub zatwierdzając każdą z nich enterem\n");
+  for (int i = 0; i < 6; i++)
+  {
+    scanf("%lf", &numbers[i]);
+  }
+  for (int i = 0; i < 6; i++)
+  {
+    if (numbers[i] > 0)
+      count++;
+  }
+  printf("Wpisanych liczb dodatnich jest: %d\n", count);
+}
+
+
+
+
+
+
+
+8c
+// Napisz program rozmieszczający poniższe 
+// wzory oddzielnie jeden pod drugim. 
+// Użyj pętli for do generowania wzorów. 
+// Do wypisywania gwiazdek należy użyć instrukcji 
+// putchar('*') (powodującej wyświetlanie ich 
+// obok siebie). Uwaga: dwa ostatnie wzory wymagają,
+// by każdy wiersz zaczynał się od odpowiedniej liczby spacji.
+//  *       ****    ****       *
+//  **      ***      ***      **
+//  ***     **        **     ***
+//  ****    *          *    ****
+
+#include <stdio.h>
+
+void firstSign();
+void secondSign();
+void thirdSign();
+void fourthSign();
+
+int main()
+{
+  firstSign();
+  secondSign();
+  thirdSign();
+  fourthSign();
+}
+
+void firstSign(){
+  for(int i=0;i<4;i++){
+    if(i==0){
+      putchar('*');
+    }
+    if(i==1){
+      for(int i=1;i<=2;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    if(i==2){
+      for(int i=1;i<=3;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    if(i==3){
+      for(int i=1;i<=4;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    putchar('\n');
+  }
+}
+
+void secondSign(){
+  for(int i=0;i<4;i++){
+    if(i==0){
+      for(int i=1;i<=4;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    if(i==1){
+      for(int i=1;i<=3;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    if(i==2){
+      for(int i=1;i<=2;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    if(i==3)
+      putchar('*');
+    putchar('\n');
+  }
+}
+
+void thirdSign(){
+  for(int i=0;i<4;i++){
+    if(i==0){
+      for(int i=1;i<=4;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    if(i==1){
+      printf(" ");
+      for(int i=1;i<=3;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    if(i==2){
+      printf("  ");
+      for(int i=1;i<=2;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    if(i==3){
+      printf("   ");
+      putchar('*');
+    }
+    putchar('\n');
+  }
+}
+
+void fourthSign(){
+  for(int i=0;i<4;i++){
+    if(i==0){
+      printf("   ");
+      putchar('*');
+    }
+    if(i==1){
+      printf("  ");
+      for(int i=1;i<=2;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    if(i==2){
+      printf(" ");
+      for(int i=1;i<=3;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    if(i==3){
+      for(int i=1;i<=4;i++){
+        putchar('*');
+        continue;
+      }
+    }
+    putchar('\n');
+  }
+}
