@@ -32,4 +32,4 @@ zwracać uwagę na nazwy funkcji (jeden wyżej niż mówi nam kod)
 
 Makefile
 
-GildedRose-Refactoring-Kata      -     znależć i zrobic 
+GildedRose-Refactoring-Kata      -     znależć i zrobic - nauczyć się funkcji "if" z tego źródła
