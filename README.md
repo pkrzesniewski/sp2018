@@ -13,4 +13,7 @@ https://tldr.sh/
 
 
 max_result - nauczyć
+upto-nauczyć
 1c aby działoło od prawej strony wypisywane liczby 
+
+
