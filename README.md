@@ -10,3 +10,6 @@ Tech is the new literacy https://www.learnenough.com/
 https://explainshell.com/
 
 https://tldr.sh/
+
+
+max_result - nauczyć
