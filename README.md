@@ -25,3 +25,5 @@ gitignore
 zadanie 9 pętla zrobić 
 
 zrobić elementarz 2
+
+zwracać uwagę na nazwy funkcji (jeden wyżej niż mówi nam kod)
