@@ -20,3 +20,8 @@ katalogi do budowanie_programow oraz pętli
 
 
 gitignore
+
+
+zadanie 9 pętla zrobić 
+
+zrobić elementarz 2
