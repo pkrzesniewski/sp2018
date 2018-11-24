@@ -17,3 +17,6 @@ upto-nauczyć
 1c aby działoło od prawej strony wypisywane liczby 
 
 katalogi do budowanie_programow oraz pętli
+
+
+gitignore
