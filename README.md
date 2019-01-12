@@ -20,3 +20,5 @@ https://tldr.sh/
 (oprócz deklaracji zmiennych, tylko wywołania funkcji
 
 *Pliki żródłowe nie zawierają znaku TAB, tylko SPACE; wcięcia akapitowe - 2 spacje
+
+*utworzyć katalog AdventOfCoute, Kata
