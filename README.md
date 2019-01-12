@@ -11,25 +11,8 @@ https://explainshell.com/
 
 https://tldr.sh/
 
-
-max_result - nauczyć
-
-upto - nauczyć
-
-1c aby działoło od prawej strony wypisywane liczby 
-
-katalogi do budowanie_programow oraz pętli
-
-
-gitignore
-
-
-zadanie 9 pętla zrobić 
-
-zrobić elementarz 2
-
-zwracać uwagę na nazwy funkcji (jeden wyżej niż mówi nam kod)
-
-Makefile
-
-GildedRose-Refactoring-Kata      -     znależć i zrobic - nauczyć się funkcji "if" z tego źródła
+*Makefile w każdym katalogu z zadaniami- pierwszy 'forget' to all
+*w każdym źródle(*.c) tekst zadania
+*funkcja main nie dłuższa niż kilka linijek kodu 5-10
+(oprócz deklaracji zmiennych, tylko wywołania funkcji
+*Pliki żródłowe nie zawierają znaku TAB, tylko SPACE; wcięcia akapitowe - 2 spacje
