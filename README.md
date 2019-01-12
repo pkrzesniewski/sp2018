@@ -22,3 +22,6 @@ https://tldr.sh/
 *Pliki żródłowe nie zawierają znaku TAB, tylko SPACE; wcięcia akapitowe - 2 spacje
 
 *utworzyć katalog AdventOfCoute, Kata 20 kyu
+
+
+Przygotować dane do Adventa w Readme.
