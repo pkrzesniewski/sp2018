@@ -25,3 +25,6 @@ https://tldr.sh/
 
 
 Przygotować dane do Adventa w Readme.
+
+
+nie może być 'dead code' - kodu nieużywanego
