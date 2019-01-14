@@ -1,5 +1,3 @@
-// ConsoleApplication1.cpp : Defines the entry point for the console application.
-//
 
 #include "stdafx.h"
 #define INPUT_SIZE (133000)
@@ -12,7 +10,7 @@ int main()
 	int o = 0;
 
 	//iteracja do przedostatniego elementu tablicy 
-	//(poniewa¿ porównujemy obecny element z kolejnym)
+	//(poniewaÂ¿ porÃ³wnujemy obecny element z kolejnym)
 	for (int i = 0; i < INPUT_SIZE-1; i++) {
 		if (IsReacting(input[i], input[i + 1])) {
 			i++;
