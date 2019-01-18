@@ -5,10 +5,10 @@
 #define INPUT_LINES (1108)
 
 
-//char** tablica tablic znak體
+//char** tablica tablic znak贸w
 char** get_input()
 {
-	//inicjalizacja tablicy string體
+	//inicjalizacja tablicy string贸w
 	char** input = (char**)malloc(INPUT_LINES * sizeof(char*));
 	FILE *input_file;
 	//otwarcie pliku z inputem
@@ -18,14 +18,14 @@ char** get_input()
 		printf("Error reading file");
 		return input;
 	}
-	//inicjalizacja zmiennych pomocniczych (char*-tablica znak體/string(砤馽uch znak體))
+	//inicjalizacja zmiennych pomocniczych (char*-tablica znak贸w/string(鲁a帽cuch znak贸w))
 	char line[100];
 	int i = 0;
 	//wczytanie kolejnej linii z pliku jako stringa(%s) i zapisanie do zmiennej line 
 	// [1518-04-30 00:55] wakes up
 	while (fscanf(input_file, "%s ", &line) != EOF)
 	{
-		//zapisujesz linie jako i-ty element tablicy string體
+		//zapisujesz linie jako i-ty element tablicy string贸w
 		input[i] = line;
 		i++;
 	}
@@ -48,7 +48,7 @@ void sort(char** arr, int n)
 
 int main()
 {
-	//wczytanie tablicy tablic znak體 z pliku i zapisanie do zmiennej input
+	//wczytanie tablicy tablic znak贸w z pliku i zapisanie do zmiennej input
 	char** input = get_input();
 	//sortowanie tablicy
 	sort(input, INPUT_LINES);
