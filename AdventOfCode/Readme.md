@@ -12,7 +12,16 @@ While this example listed the entries in chronological order, your entries are i
 You'll need to organize them before they can be analyzed.
 
 
+
+
+
+
+
 Kod:
+
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
