@@ -17,7 +17,7 @@ You'll need to organize them before they can be analyzed.
 
 
 
-Kod:
+Kod.c 
 
 
 
