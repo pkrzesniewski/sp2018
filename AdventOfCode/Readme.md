@@ -17,7 +17,7 @@ You'll need to organize them before they can be analyzed.
 
 
 
-Kod.c 
+%Kod.c
 
 
 
@@ -166,3 +166,4 @@ int main(int argc, char *argv[]) {
   fclose(input);
   return sleepestguard(data);
 }
+%
