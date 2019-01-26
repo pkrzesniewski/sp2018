@@ -131,7 +131,6 @@ int sleepestguard(lines_t data) {
 
 }
 
-
 int main(int argc, char *argv[]) {
 	if (argc < 2) {
 		printf("Uzycie: %s plik_wejsciowy\n", argv[0]);
