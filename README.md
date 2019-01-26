@@ -11,20 +11,5 @@ https://explainshell.com/
 
 https://tldr.sh/
 
-*Makefile w każdym katalogu z zadaniami- pierwszy 'forget' to all
-
-*w każdym źródle(*.c) tekst zadania
-
-*funkcja main nie dłuższa niż kilka linijek kodu 5-10
-
-(oprócz deklaracji zmiennych, tylko wywołania funkcji
-
-*Pliki żródłowe nie zawierają znaku TAB, tylko SPACE; wcięcia akapitowe - 2 spacje
-
-*utworzyć katalog AdventOfCoute, Kata 20 kyu
 
 
-Przygotować dane do Adventa w Readme.
-
-
-nie może być 'dead code' - kodu nieużywanego
