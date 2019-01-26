@@ -1,4 +1,4 @@
-Strategy 1: Find the guard that has the most minutes asleep. 
+##Strategy 1: Find the guard that has the most minutes asleep. 
 What minute does that guard spend asleep the most?
 
 In the example above, Guard #10 spent the most minutes asleep, a total of 50 minutes (20+25+5), 
